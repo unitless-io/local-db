@@ -3,10 +3,10 @@ import { getFileId } from './file-id';
 describe('getFileId', () => {
   test.each`
     filePath               | expected
-    ${'/test/test.test'}   | ${'782c377efeb147898be15afbd589d8d6'}
-    ${'/.test/test.test'}  | ${'8328c79ba5b0f31881d01b3dd3893881'}
-    ${'test/test.test.ts'} | ${'d48af07c393f76db8aadad0fbf60b557'}
-    ${'\\test\\test.test'} | ${'064cbad35bcb356a84cd83a8f7bbbe08'}
+    ${'/test/test.test'}   | ${'1b9f5126-531c-55f4-951e-2b0bfb35b91d'}
+    ${'/.test/test.test'}  | ${'954202d1-3c5e-5c2d-9e7d-863585d4ee89'}
+    ${'test/test.test.ts'} | ${'465282a7-9568-5cd2-bf88-ddb098a052ae'}
+    ${'\\test\\test.test'} | ${'f2f016c7-16c3-5983-b413-a3c5357b31a7'}
   `('returns file id: "$expected" when filePath: "$filePath"', ({ filePath, expected }) => {
     expect(getFileId(filePath)).toBe(expected);
   });
