@@ -1,5 +1,5 @@
-import MD5 from 'md5.js';
+import { v5 as uuidv5 } from 'uuid';
 
 export const getFileId = (filePath: string) => {
-  return new MD5().update(filePath).digest('hex');
+  return uuidv5(filePath, uuidv5.URL);
 };
