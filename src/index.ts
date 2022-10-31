@@ -5,3 +5,4 @@ export * from '@app/config';
 export * from '@app/save-file';
 export * from '@app/save-functions';
 export * from '@app/save-calls';
+export * from '@app/get-files';
