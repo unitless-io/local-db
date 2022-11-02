@@ -11,3 +11,9 @@ export interface FunctionMeta {
   type: FunctionType;
   content: string;
 }
+
+export interface Function {
+  type: FunctionType;
+  name: string;
+  contentChangedAt: string;
+}

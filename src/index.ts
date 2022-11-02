@@ -6,3 +6,5 @@ export * from '@app/save-file';
 export * from '@app/save-functions';
 export * from '@app/save-calls';
 export * from '@app/get-files';
+export * from '@app/get-functions';
+export * from '@app/get-calls';
