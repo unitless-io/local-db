@@ -41,3 +41,7 @@ export const getDirectoriesList = async (path: string) => {
 export const writeFile = <T extends object>(path: string, data: T) => {
   return fsPromises.writeFile(path, JSON.stringify(data));
 };
+
+export const removeFile = (path: string) => {
+  return fsPromises.rm(path);
+};
