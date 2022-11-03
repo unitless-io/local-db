@@ -8,3 +8,4 @@ export * from '@app/save-calls';
 export * from '@app/get-files';
 export * from '@app/get-functions';
 export * from '@app/get-calls';
+export * from '@app/delete-all-calls';
